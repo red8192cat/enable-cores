@@ -9,7 +9,7 @@ usage() {
  Examples: $0 2"
 }
 
-if [[ "$1" = "-h" ]] || [[ "$1" = "--help" ]] ; then usage; fi
+if [[ "$1" = "-h" ]] || [[ "$1" = "--help" ]] ; then usage; exit; fi
 
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
